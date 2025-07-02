@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz App using Open Trivia DB</title>
+</head>
+<body>
+    <div id="container">
+        <div id="select-container">
+            <h2>Select your options for your quiz</h2>
+            <label for="select-amount">Select number of questions: </label>
+            <input type="number" name="select-amount" id="select-amount" min="1" max="20">
+            <label for="select-category">Select category: </label>
+            <select name="select-category" id="select-category">
+                <option value="">Any category</option>
+                <option value="9">General knowledge</option>
+                <option value="27">Animals</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="16">Entertainment: Board games</option>
+                <option value="10">Entertainment: Books</option>
+                <option value="32">Entertainment: Cartoon &amp; animations</option>
+                <option value="29">Entertainment: Comics</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="31">Entertainment: Japanese anime &amp; manga</option>
+                <option value="12">Entertainment: Music</option>
+                <option value="13">Entertainment: Musicals &amp; theatres</option>
+                <option value="14">Entertainment: Television</option>
+                <option value="15">Entertainment: Video games</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="20">Mythology</option>
+                <option value="24">Politics</option>
+                <option value="17">Science &amp; nature</option>
+                <option value="18">Science: Computers</option>
+                <option value="30">Science: Gadgets</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="21">Sports</option>
+                <option value="28">Vehicles</option>
+            </select>
+            <label for="select-difficulty">Select difficulty: </label>
+            <select name="select-difficulty" id="select-difficulty">
+                <option value="any">Any difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="select-type">Select type: </label>
+            <select name="select-type" id="select-type">
+                <option value="any">Any type</option>
+                <option value="multiple">Multiple choice</option>
+                <option value="boolean">True/False</option>
+            </select>
+            <button type="button" id="button-search" onclick="fetchQuiz()">Start quiz!</button>
+        </div>
+        <div id="quiz-content">
+            <!-- 
+            <div class="question-content">'
+                <p>1. Question?</p>
+                <div class="answer-content">
+                    <input type="radio" name="question" value="answer">
+                    <label for="answer">Answer</label>
+                </div> 
+            </div>
+            -->
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
